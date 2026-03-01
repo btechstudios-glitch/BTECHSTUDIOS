@@ -1,164 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BTECH STUDIOS | Elite Digital Agency</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-:root{--black:#04060a;--blue:#071a33;--cyan:#00e5ff;--red:#ff2e2e;--white:#fff}
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-html{scroll-behavior:smooth}
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, rgba(180,0,0,0.6), rgba(255,255,255,0.6));
-    color: #ff;
-    overflow-x: hidden;
-}
-/* PRELOADER */
-#preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center;z-index:9999;height:60px;border:5px solid #111;border-top:5px solid var(--cyan);border-radius:50%;width:100%;top:0;background:rgba(4,6,10,.6);backdrop-filter:blur(14px);display:flex;justify-content:space-between;align-items:center;padding:15px 40px;z-index:999}
-header img{height:48px}
-nav a{color:#fff;margin:0 12px;text-decoration:none;transition:.3s}
-nav a:hover{color:var(--cyan)}
-.btn{padding:12px 26px;border-radius:30px;background:linear-gradient(45deg,var(--cyan),#007bff);color:#000;text-decoration:none;font-weight:600;transition:.3s}
-.btn:hover{background:var(--red);color:#fff}
-/* HERO */
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at center,#021a33,#000);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,var(--cyan),transparent);opacity:.15}
-}
-.hero h1{font-size:4rem;color:var(--cyan);color:#ccc}
-section{padding:110px 40px;position:relative}
-.section-title{text-align:center;font-size:2.4rem;margin-bottom:50px;color:var(--cyan);grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:28px;backdrop-filter:blur(12px);transition:.4s}
-.card:hover{transform:translateY(-10px);box-shadow:0 0 25px rgba(0,229,255,.5)}
-.card i{font-size:28px;color:var(--cyan);margin-bottom:10px}
-/* PORTFOLIO */
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-.project{height:230px;border-radius:14px;background:linear-gradient(120deg,#111,#1b1b1b);position:relative;overflow:hidden;transition:.4s}
-.project:hover{transform:scale(1.05);outline:2px solid var(--cyan)}
-.project::after{content:"BTECH PROJECT";position:absolute;bottom:10px;left:15px}
-/* PARALLAX */
-.parallax{background:linear-gradient(120deg,#021a33,#000);text-align:center}
-/* CONTACT */
-.contact form{max-width:520px;margin:auto;display:grid;gap:15px}
-input,textarea{padding:12px;border:none;border-radius:6px}
-/* FOOTER */
-footer{background:#020a14;padding:60px 40px}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
-footer h4{color:var(--cyan);margin-bottom:10px}
-footer a{display:block;color:#aaa;text-decoration:none;margin:6px 0}
-footer a:hover{color:#fff}
-.copy{text-align:center;margin-top:25px;color:#777}
-.socials i{margin-right:12px;font-size:20px;cursor:pointer}
-/* WHATSAPP */
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:16px;border-radius:50%;font-size:20px;text-decoration:none}
+    <title>BTECH project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-/* Responsive Mobile Fix */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        padding: 0 15px;
-        text-align: center;
-    }
-
-    .hero button, .btn {
-        width: 80%;
-        max-width: 280px;
-    }
-
-    .container, section {
-        padding: 20px 15px;
-    }
-}
-
-</style>
 </head>
-<body>
-<div id="preloader"><div class="loader"></div></div>
-<header>
-<img src="BTECHlogo.png" alt="BTECH STUDIOS">
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
-<a class="btn" href="#booking">Book</a>
-</nav>
-</header>
-<section class="hero" id="home">
-<div>
-<h1>BTECH STUDIOS</h1>
-<p>Elite Creative & Technology Agency</p>
-<a href="#booking" class="btn">Launch Project</a>
-</div>
-</section>
-<section id="about">
-<h2 class="section-title">About Elite Studio</h2>
-<p style="max-width:800px;margin:auto;text-align:center">BTECH STUDIOS delivers premium branding, digital solutions and IT innovation from Nairobi, Kenya. Built for modern businesses seeking elite digital presence.</p>
-</section>
-<section id="services">
-<h2 class="section-title">Elite Services</h2>
-<div class="grid">
-<div class="card"><i class="fas fa-palette"></i><h3>Graphics Design</h3></div>
-<div class="card"><i class="fas fa-code"></i><h3>Web Development</h3></div>
-<div class="card"><i class="fas fa-server"></i><h3>IT Support</h3></div>
-<div class="card"><i class="fas fa-bullhorn"></i><h3>Branding</h3></div>
-<div class="card"><i class="fas fa-chart-line"></i><h3>SEO Marketing</h3></div>
-<div class="card"><i class="fas fa-laptop-code"></i><h3>Automation</h3></div>
-</div>
-</section>
-<section id="portfolio">
-<h2 class="section-title">Elite Portfolio</h2>
-<div class="gallery">
-<div class="project"></div>
-<div class="project"></div>
-<div class="project"></div>
-<div class="project"></div>
-</div>
-</section>
-<section class="parallax">
-<h2 class="section-title">We Build Digital Experiences</h2>
-<p>Modern • Powerful • Professional</p>
-</section>
-<section id="contact" class="contact">
-<h2 class="section-title">Contact Us</h2>
-<form>
-<input placeholder="Name">
-<input placeholder="Email">
-<textarea placeholder="Project Details"></textarea>
-<button class="btn">Send</button>
-</form>
-</section>
-<section id="booking" class="parallax">
-<h2 class="section-title">Book Your Project</h2>
-<p>WhatsApp +254112887428</p>
-<a href="https://wa.me/254112887428" class="btn">Book Now</a>
-</section>
-<footer>
-<div class="footer-grid">
-<div><h4>BTECH STUDIOS</h4><p>Design Simplicity</p></div>
-<div><h4>Services</h4><a>Web Design</a><a>Branding</a><a>SEO</a></div>
-<div><h4>Contact</h4><p>Nairobi, Kenya</p><p>+254112887428</p><p>btechstudios01@gmail.com</p></div>
-<div><h4>Follow</h4><div class="socials"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube"></i><i class="fab fa-tiktok"></i></div></div>
-</div>
-<p class="copy">© 2025 BTECH STUDIOS • Elite Version</p>
-</footer>
-<a href="https://wa.me/254112887428" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-</body>
-</html>
 
+<body>
+    <header>
+        <img src="images/BTECHlogo.png" class="logo" style="max-width: 360px;">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about-us">About</a>
+            <a href="#services">Services</a>
+            <a href="#inputs">contact us</a>
+        </nav>
+    </header>
+    <section class="face" id="face">
+        <div id="face">
+            <div class="heading" id="heading">
+                <h1>WELCOME TO BTECH <span id="span">STUDIOS!</span></h1>
+            </div>
+
+            <p style="font-size: 15px; color: brown; margin-bottom: 40px;">Your home for web design, graphics, video
+                editing
+                &
+                digital creativity.
+            </p>
+            <a class="btn" href="#services">Explore Services</a>
+        </div>
+    </section>
+    <hr style="margin-top: 100px;">
+    <section class="services" id="services">
+        <h2 style="text-align: center; font-size: 25px; color: rgb(139, 5, 5,0.7);margin-top: 50px;">services</h2>
+        <div class="service-container" id="service">
+
+            <div class="card">
+                <img src="images/marketing.jpg" alt="">
+                <h3> digital marketing and SEO</h3>
+                <p>Web Traffic,secure engine rankings and converting visitors into real customers</p><br>
+            </div>
+            <div class="card">
+                <img src="images/website.jpg" alt="">
+                <h3>Web design and developement</h3>
+                <p>best perfomance,security and visual appeal</p><br>
+            </div>
+            <div class="card">
+                <img src="images/Graphics.jpg" alt="">
+                <h3>graphics design</h3>
+                <p>social media posts,banners,fliers,posters and all graphics design relateds</p><br>
+            </div>
+
+            <div class="card">
+                <img src="images/logodesign.jpeg" alt="">
+                <h3>logo design</h3>
+                <p>brand,company and business Logos</p><br>
+            </div>
+            <div class="card">
+                <img src="images/videoediting.jpeg" alt="">
+                <h3>video and photo editing</h3>
+                <p>social media,youtube video editing and promotional and marketing videos <br>photo
+                    retouching,enhancing,background removal and color photo editing</p><br>
+            </div>
+            <div class="card">
+                <img src="images/cyber.jpg" alt="">
+                <h3>cyber online services</h3>
+                <p>job applications,CV writing,KRA,HELB,SHA and NTSA services</p><br>
+            </div>
+            <div class="card"><img src="images/ITsupport.jpg" alt="">
+                <h3>basic IT consultant</h3>
+                <p>software installation and updates,basic supports,remote IT suport and IT guadance</p>
+            </div>
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="about">
+            <h2 id="headings">About us</h2>
+            <p>Btech studios offers professional digital and IT services to help businesses grow in digital space.
+                <br>
+                we
+                specialize
+                in web developement,digital marketing,graphics designs,branding and IT support. <br> our focus is
+                delivering
+                reliable,creative and user-friendly solutions that drives growth and success
+            </p>
+        </div>
+
+        <h4 id="headings">mission</h4>
+        <p>our mission is to provide reliable,nnovative and affordable digital and IT solutons that help businesses
+            and
+            individual grow in the digital world <br>We are commited to delivering high quality services, building
+            long-term
+            client relationships and using technology to solve real world problems</p>
+        <h4 id="headings">vision</h4>
+        <p>To be a trusted digital partner known for innovation,quality and impact</p>
+        <div class="profile">
+            <img src="images/profile1.jpg" class="profile-img">
+
+            <div class="username">
+                <h5>BECAM W AZIZ</h5>
+            </div>
+            <div class="portfolio">
+                <P>Founder and CEO</P>
+            </div>
+        </div>
+    </section>
+
+    <h3 style="text-align: center; color: brown; font-size: 20PX;">BTECH STUDIOS<Span
+            style="color: rgb(8, 75, 151); font-size: medium;"> SAMPLE
+            projects</SPan></h3>
+    <p style="text-align: center; font-size: 14px;">This are some of our completed projects..</p>
+    <div class="project">
+        <img src="portfolio/AD1.png" alt="">
+        <img src="portfolio/BCARD.png" alt="">
+        <img src="portfolio/INVITATION.png" alt="">
+        <img src="portfolio/plogo2.png" alt="">
+        <img src="portfolio/POSTER.png" alt="">
+        <img src="portfolio/SM1.png" alt="">
+        <img src="portfolio/SM.png" alt="">
+        <img src="portfolio/plogo.png" alt="">
+    </div>
+
+    <section class="form" id="contact">
+        <form action="sample-page-handler.html" method="post">
+            <h2 style="color: white; text-align: center; font-size: 25px;">Contact us</h2>
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <textarea name="leave your message" id="message">describe your message..</textarea><br>
+            <button><i class="fab fa-phone-call"></i>SEND MESSAGE</a></button>
+
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <a href="tel:+254112887428">call us </a>
+        <a href="https://wa.me/+254706675009?text=hello%20I%20yOUR%20Services" target="_blank">Whatsapp</a>
+        <a href="https://www.facebook.com/becam.aziz.727117">facebook</a>
+        <a href="mailto:becamwilunda15@gmail.com">send email</a><br>
+        <div class="social-icon">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="tel:+254112887428" target="_blank"><i class="fab fa-phone-alt"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/+254706675009?text=hello%20I%20yOUR%20Services" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>Visit Our Offices at: Muratha road Kangemi, Nairobi-Kenya</p>
+        <p>P.O BOX 00625 Kangemi-Nairobi</p>
+        <footer id="copy"> &copy;2026 BTECH STUDIOS | All Rights Reserved | privacy | Terms</footer>
+
+    </footer>
+</body>
+
+</html>

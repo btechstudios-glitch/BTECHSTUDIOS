@@ -383,7 +383,7 @@ footer a {
     border-radius: 5px;
     font-weight: bold;
     margin: 10px;
-    background-color: rgb(106, 151, 235, 0.5);
+    
     float: none;
 
 }
@@ -399,5 +399,6 @@ footer a:hover {
 
 footer p {
     color: white;
+
 
 }

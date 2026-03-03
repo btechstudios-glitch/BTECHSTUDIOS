@@ -1,17 +1,133 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(201, 131, 131, 0.5); /* Fixed to rgba */
+
+
+    background-color: rgb(201, 131, 131, 0.5);
     background-size: cover;
+
     animation: gradient 12s ease infinite;
     margin: 0;
-    padding: 5px;        /* General padding only (removed conflicting padding-left) */
+    padding-left: 10px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
+header {
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: brown;
+    background-color: rgba(179, 135, 135, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+
+
+}
+
+.heading {
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 70px;
+    font-size: 15px;
+    color: brown;
+
+
+}
+
+.face {
+    color: green;
+    text-align: center;
+}
+
+nav a {
+    justify-content: space-between;
+    display: flex;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    border-radius: 5px;
+    float: right;
+    height: fit-content;
+    font-weight: 450;
+}
+
+nav {
+    display: flex;
+    padding: 8px 10px;
+
+}
+
+nav a:hover {
+    color: rgba(13, 71, 71, 0.5);
+}
+
+.logo {
+    width: 20%;
+    height: 60%;
+    float: left;
+}
+
+h1 span {
+    text-transform: lowercase;
+    color: rgb(5, 82, 145);
+    font-size: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: rgba(12, 116, 185, 0.5);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.btn:hover {
+    background: white;
+    color: #1e3c72;
+
+
+
+}
+
+#headings {
+    color: brown;
+
+}
+
 form {
+
+
     display: flex;
     flex-direction: column;
-    gap: 10px;          /* Added value instead of just px */
+    gap: px;
     width: 50%;
     margin: auto;
     border-radius: 10px;
@@ -23,16 +139,54 @@ form {
 
 form input {
     width: 100%;
-    margin: 5px 0 5px 10px; /* Combines margin and margin-left */
+
+    margin: 5px;
     text-align: left;
+    margin-left: 10px;
     font-size: 12px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(250, 255, 255); 
+    background-color: rgb(250, 255, 255);
     padding: 20px;
+
     outline: white;
     max-width: 500px;
-    align-items: center; /* Not used by input, safe to remove if desired */
+    align-items: center
+}
+
+
+.contact {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-right: 20px;
+
+
+
+}
+
+
+
+textarea {
+    width: 100%;
+
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(224, 243, 243);
+    padding: 20px;
+    align-items: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    outline-color: antiquewhite;
+    max-width: 500px;
+    text-decoration: none;
+
 }
 
 form button {
@@ -41,18 +195,233 @@ form button {
     height: 50px;
     background-color: rgb(45, 105, 173);
     color: white;
+    align-items: center;
     border-radius: 10px;
-    margin: 5px 0;
+    margin: 5px;
+    text-align: left;
     text-align: center;
     font-size: 14px;
+    border: none;
     padding: 20px;
     max-width: 500px;
-    align-items: center; /* Not needed here */
+    align-items: center
+}
+
+
+
+
+.social-icons a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 30px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077b5;
+    /* Example hover color */
+
+}
+
+
+
+.profile {
+    flex-direction: column;
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid rgb(189, 92, 47);
+    box-shadow: 0 4px 10px rgb(66, 66, 218);
+}
+
+.profile-img:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgb(66, 66, 218);
+
 }
 
 .username {
-    margin-left: 10px; /* Provided px value */
+    margin-left: px;
     font-size: 20px;
     font-weight: 600;
     color: rgb(53, 53, 209);
+}
+
+.portfolio {
+
+    font-size: 14px;
+
+
+}
+
+
+
+.service-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(201, 131, 131, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+
+img {
+    width: 20%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    animation-direction: reverse;
+
+
+}
+
+.card img {
+    opacity: 0.8;
+}
+
+img:hover {
+    transform: translateY(-2px);
+
+    transition: transform 0.3s ease;
+}
+
+.project {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(201, 131, 131, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+
+
+}
+
+
+
+
+
+.card {
+    background-color: rgb(201, 131, 131, 0.5);
+    width: 32%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 0 10px 15px rgb(82, 75, 60);
+    object-fit: cover;
+    max-width: 300px;
+    height: auto;
+
+
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    max-width: 300px;
+    max-height: 200px;
+
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin-top: 0%;
+}
+
+.about-us {
+    background-color: rgb(201, 131, 131, 0.5);
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 50px;
+
+}
+
+.about-us .about {
+
+    max-width: 900px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: grid;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to left, rgba(133, 20, 20, 0.6), rgb(177, 128, 177, 0.6));
+    padding: 30px;
+}
+
+footer a {
+    display: inline-block;
+    padding: 12px 20px;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+
+    float: none;
+
+}
+
+#copy {
+    margin-top: 50px;
+
+}
+
+footer a:hover {
+    background-color: rgb(231, 185, 171);
+}
+
+footer p {
+    color: white;
+
+
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.whatsapp-float i {
+    margin-top: 15px;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
 }
